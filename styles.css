@@ -1,0 +1,382 @@
+.side-bar ul {
+	margin-top: 20px;
+	list-style: none;
+}
+.side-bar ul li {
+	font-size: 16px;
+	padding: 15px 0px;
+	padding-left: 20px;
+	transition: 500ms background;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.side-bar ul li:hover {
+	background: #127b8e;
+}
+.side-bar ul li a {
+	text-decoration: none;
+	color: #eee;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+.side-bar ul li a i {
+	display: inline-block;
+	padding-right: 10px;
+	font-size: 23px;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: arial, sans-serif;
+}
+.user-p img {
+	width: 100px;
+	border-radius: 50%;
+}
+.user-p h2 {
+	color: #ccc;
+	padding: 5px 0;
+
+}
+.user-p {
+	text-align: center;
+	padding-left: 10px;
+	padding-top: 25px;
+}
+.side-bar {
+	width: 250px;
+    position: fixed;
+	background: #262931;
+	min-height: 100vh;
+	
+}
+/* Apply styles to the container div */
+.social {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center;/* Adjust the spacing between icons */
+}
+
+/* Apply styles to the social icons */
+.social-icon {
+    display: inline-block;
+    margin-right:0 8px; /* Adjust the spacing between icons */
+    border-radius: 50%; /* Make the icons round */
+    background-color:#262931; /* Set the background color to white */
+    padding: 8px; /* Adjust the padding for better appearance */
+}
+
+/* Apply styles to the icon elements inside the social icons */
+.social-icon i {
+    color:white; /* Set the icon color to black (change to your preferred color) */
+    font-size: 20px; /* Adjust the icon size */
+}
+/* Your existing CSS */
+
+/* Footer styles */
+.footer-nav {
+    text-align: center;
+    padding: 20px;
+    color: #ccc;
+    font-size: 14px;
+    margin-top: 170px; /* Push the footer to the bottom of the sidebar */
+}
+
+.home,
+.about,.resume {
+    margin-left: 250px; /* Adjust margin to match sidebar width */
+}
+
+
+.home {
+    margin-left: 250px;
+    height: 100vh;
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.about {
+    background-color: #fff;
+    padding: 50px;
+}
+
+.about h2 {
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+}
+
+.image-container {
+    width: 40%; /* Adjust the width of the image container as needed */
+}
+
+.text-container {
+    width: 95%;
+     /* Adjust the width of the text container as needed */
+}
+
+.about-image {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.text-section {
+    max-width: 100%;
+}
+
+.info-lists {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-list,
+.right-list {
+    list-style: none;
+    padding: 0;
+    flex: 1;
+}
+
+.left-list li,
+.right-list li {
+    margin-bottom: 25px;
+}
+/* Existing styles (from previous code) */
+
+/* Facts Section Styles */
+.facts {
+    margin-top: 40px;
+}
+
+.facts h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.facts p {
+    margin-bottom: 20px;
+}
+
+.fact-numbers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fact {
+    text-align: center;
+}
+
+.big-number {
+    font-size: 2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Add emojis to the big-number spans */
+.fact p::after {
+    content: '';
+    display: block;
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+
+.fact p:contains("Happy Clients")::after {
+    content: '😊';
+}
+
+.fact p:contains("Projects Completed")::after {
+    content: '🚀';
+}
+
+.fact p:contains("Hours of Support")::after {
+    content: '⏰';
+}
+
+.fact p:contains("Hard Workers")::after {
+    content: '💪';
+}
+/* Add the following styles to your existing styles.css file or create a new one */
+
+/* Skills Section Styles */
+/* Add the following styles to your existing styles.css file or create a new one */
+#one img{
+    display: inline-block;
+    height: 2rem;
+}
+#one span{
+    display: inline-block;
+}
+/* Skills Section Styles */
+/* Add the following styles to your existing styles.css file or create a new one */
+
+/* Skills Section Styles */
+/* Add the following styles to your existing styles.css file or create a new one */
+
+/* Skills Section Styles */
+/* Add the following styles to your existing styles.css file or create a new one */
+
+/* Skills Section Styles */
+/* Add the following styles to your existing styles.css file or create a new one */
+
+/* Skills Section Styles */
+/* Add the following styles to your existing styles.css file or create a new one */
+
+/* Skills Section Styles */
+/* Add the following styles to your existing styles.css file or create a new one */
+
+/* Skills Section Styles */
+
+   /* Add the following styles to your existing styles.css file or create a new one */
+
+/* Skills Section Styles */
+.skills {
+    margin-top: 40px;
+    
+    
+}
+
+.skills h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skills p {
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-left,
+.skills-right {
+    flex: 1;
+}
+
+.skill {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bar-container {
+    height: 20px; /* Adjust the height of the loading bars */
+    width: 100%;
+    background-color: white; /* Initial white background */
+    position: relative;
+}
+
+.bar {
+    height: 100%;
+    width: 0; /* Initial width set to 0 */
+    background-color:#5cb3fd; /* Light blue fill based on the loading percentage */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 1s ease-in-out; /* Add transition for smooth width change */
+}
+
+.percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+}
+
+.skills-right .bar-container {
+    margin-left: 20px; /* Add space between bars on the right */
+}
+
+/* Add additional styles as needed */
+
+
+/* Add additional styles as needed */
+
+
+/* Add additional styles as needed */
+
+/* Resume Section Styles */
+.resume {
+    margin-top: 40px;
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 20px; /* Add padding for better appearance */
+}
+
+.resume h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.introduction {
+    margin-bottom: 20px;
+}
+
+.timelines {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeline {
+    flex: 1;
+    border-left: 2px solid #3498db; /* Blue color for the timeline */
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.timeline.left {
+    border-left: 2px solid #3498db; /* Blue color for the left timeline */
+    padding-left: 20px;
+}
+
+.timeline.right {
+    border-right: 2px solid #3498db; /* Blue color for the right timeline */
+    padding-right: 20px;
+}
+
+.entry {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.entry h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.description,
+.school {
+    margin-top: 5px;
+}
+
+.circle {
+    width: 16px;
+    height: 16px;
+    background-color: #3498db; /* Blue color for the circle */
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: -28px;
+}
+
+.education-entry .degree-entry {
+    margin-left: 20px; /* Add space between circle and degree entries */
+}
