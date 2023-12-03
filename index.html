@@ -6,13 +6,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
    
         <nav class="side-bar">
 			<div class="user-p">
 				<img src="profile-img.jpg">
-				<h2>Harry</h2>
+				<h2 style="color: white;">Harry</h2>
 			</div>
             <div class="social">
                 <a href="" class="social-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -24,25 +25,25 @@
              </div> 
 			<ul>
 				<li>
-					<a href="#">
-						<i class="fa fa-home" aria-hidden="true"></i>
+					<a href="#" onclick="scrollToSection('home-section')">
+						<i class="fa fa-home" ></i>
 						<span>Home</span>
 					</a>
 				</li>
 				<li>
-					<a href="#">
-						<i class="fa fa-user" aria-hidden="true"></i>
+					<a href="#about">
+						<i class="fa fa-user" ></i>
 						<span>About</span>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="#resume">
 						<i class="fa  fa-file-text-o" aria-hidden="true"></i>
 						<span>Resume</span>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="#portfolio">
 						<i class="fa fa-info-circle" aria-hidden="true"></i>
 						<span>Portfolio</span>
 					</a>
@@ -54,7 +55,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="#contact">
 						<i class="fa fa-envelope-o" aria-hidden="true"></i>
 						<span>Contact</span>
 					</a>
@@ -68,9 +69,9 @@
 
        
             <!-- Home Section -->
-            <section class="home">
+            <section class="home" id="home-section">
                 <div class="typing-container">
-                    <h1 id="typed-name" class="center-text">Harry</h1>
+                    <h1 id="typed-name" class="center-text" style="font-size: 90px;">Harry</h1>
                     <h2 id="typed-description" class="center-text"></h2>
                 </div>
             </section>
@@ -78,7 +79,7 @@
 
 
          <!-- About Section -->
-<section class="about">
+<section class="about" id="about">
     <h2>About</h2>
 
     <div class="about-content">
@@ -124,6 +125,7 @@
         </div>
     </div>
     <!-- Facts Section -->
+
     <div class="facts">
         <h3>Facts</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis turpis eu ligula vulputate scelerisque.</p>
@@ -158,164 +160,353 @@
 <!-- Skills Section -->
 <!-- Add the following code inside your existing body tag -->
 
-<!-- Skills Section -->
-<!-- Add the following code inside your existing body tag -->
 
-<!-- Skills Section -->
-<!-- Add the following code inside your existing body tag -->
-
-<!-- Skills Section -->
-<!-- Add the following code inside your existing body tag -->
-
-<!-- Skills Section -->
 
 
        <!-- Add the following code inside your existing body tag -->
 
-<!-- Skills Section -->
-<section class="skills">
-    <h2>Skills</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis turpis eu ligula vulputate scelerisque.</p>
+       <section class="section section-skills">
+        <h2 class="section-heading">Skills</h2>
+        <div class="section-content">
+          <p class="section-content__text general-size general-margin-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            quod explicabo perferendis nisi expedita nemo error iste, tempore
+            fugiat est! Iusto veritatis soluta cum dolores nulla officia culpa
+            quis optio!
+          </p>
 
-    <div class="skills-container">
-        <div class="skills-left">
-            <div class="skill">
-                <span>HTML</span>
-                <div class="bar-container">
-                    <div class="bar" style="width: 80%;"></div>
-                    <span class="percentage">80%</span>
-                </div>
+          <div class="section-skills__skills-container">
+            <div class="section-skills__skill">
+              <p class="bold general-size section-skills__skill-text">
+                <span class="section-skills__skill-name">HTML</span>
+                <span class="section-skills__skill-percent">100%</span>
+              </p>
+              <div class="section-skills__skill-bar">
+                <div
+                  class="section-skills__skill-bar-fill section-skills__skill-bar-fill--html"
+                ></div>
+              </div>
             </div>
-            <div class="skill">
-                <span>CSS</span>
-                <div class="bar-container">
-                    <div class="bar" style="width: 70%;"></div>
-                    <span class="percentage">70%</span>
-                </div>
+            <div class="section-skills__skill">
+              <p class="bold general-size section-skills__skill-text">
+                <span class="section-skills__skill-name">PHP</span>
+                <span class="section-skills__skill-percent">80%</span>
+              </p>
+              <div class="section-skills__skill-bar">
+                <div
+                  class="section-skills__skill-bar-fill section-skills__skill-bar-fill--php"
+                ></div>
+              </div>
             </div>
-            <div class="skill">
-                <span>JavaScript</span>
-                <div class="bar-container">
-                    <div class="bar" style="width: 60%;"></div>
-                    <span class="percentage">60%</span>
+            <div class="section-skills__skill">
+              <p class="bold general-size section-skills__skill-text">
+                <span class="section-skills__skill-name">CSS</span>
+                <span class="section-skills__skill-percent">90%</span>
+              </p>
+              <div class="section-skills__skill-bar">
+                <div
+                  class="section-skills__skill-bar-fill section-skills__skill-bar-fill--css"
+                ></div>
+              </div>
+            </div>
+            <div class="section-skills__skill">
+              <p class="bold general-size section-skills__skill-text">
+                <span class="section-skills__skill-name">ML</span>
+                <span class="section-skills__skill-percent">90%</span>
+              </p>
+              <div class="section-skills__skill-bar">
+                <div
+                  class="section-skills__skill-bar-fill section-skills__skill-bar-fill--wordpress"
+                ></div>
+              </div>
+            </div>
+            <div class="section-skills__skill">
+              <p class="bold general-size section-skills__skill-text">
+                <span class="section-skills__skill-name">Node js</span>
+                <span class="section-skills__skill-percent">75%</span>
+              </p>
+              <div class="section-skills__skill-bar">
+                <div
+                  class="section-skills__skill-bar-fill section-skills__skill-bar-fill--javascript"
+                ></div>
+              </div>
+            </div>
+            <div class="section-skills__skill">
+              <p class="bold general-size section-skills__skill-text">
+                <span class="section-skills__skill-name">PHOTOSHOP</span>
+                <span class="section-skills__skill-percent">55%</span>
+              </p>
+              <div class="section-skills__skill-bar">
+                <div
+                  class="section-skills__skill-bar-fill section-skills__skill-bar-fill--photoshop"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</section>
+
+
+      <section class="resume" id="resume">
+        <h2>Resume</h2>
+        <p ">
+            Welcome to my professional resume. Here you can find information about my introduction, education, and professional experience.
+        </p>
+        <h3>Sumary</h3>
+        <div class="timelines">
+        <div class="timeline left">
+            <div class="entry introduction-entry">
+                <div class="circle"></div>
+                <h3>Introduction</h3>
+                
+                <ul style="list-style: none;">
+                   <li> <p style="font-size: medium;"> <i>
+                        Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.
+                    </i></p></li>
+                   <li> Portland par 127, Orlando, FL<br></li>
+                   <li> （123） 456-7891<br></li>
+                   <li> alice.barkley@example.com</li>
+                </ul>
+            </div>
+
+            <div class="entry education-entry">
+                <div class="circle"></div>
+                <h3>Education</h3>
+                <!-- Degree Entry 1 -->
+                <div class="degree-entry">
+                    <p class="date">2015 - 2016</p>
+                    <p class="school">MASTER OF FINE ARTS & GRAPHIC DESIGN</p>
+                    <p>
+                        Rochester Institute of Technology, Rochester, NY<br>
+                        Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend
+                    </p>
+                </div>
+                <!-- Degree Entry 2 -->
+                <div class="degree-entry">
+                    <p class="date">2010 - 2014</p>
+                    <p class="school">BACHELOR OF FINE ARTS & GRAPHIC DESIGN</p>
+                    <p>
+                        Rochester Institute of Technology, Rochester, NY<br>
+                        Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Elus vel ratione cius unde vitas rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon codor mart dil
+                    </p>
                 </div>
             </div>
         </div>
 
-        <div class="space"></div> <!-- Space between left and right -->
-
-        <div class="skills-right">
-            <div class="skill">
-                <span>React</span>
-                <div class="bar-container">
-                    <div class="bar" style="width: 80%;"></div>
-                    <span class="percentage">80%</span>
+        <!-- Right Timeline (Professional Experience) -->
+        <div class="timeline right">
+            <div class="entry experience-entry">
+                <div class="circle"></div>
+                <h3>Professional Experience</h3>
+                <!-- Work Entry 1 -->
+                <div class="work-entry">
+                    <p class="date">2019 - Present</p>
+                    <p class="position"><b>SENIOR GRAPHIC DESIGN SPECIALIST</b></p>
+                    <p class="company">Experion, New York, NY</p>
+                    <ul style="list-style: none;">
+                        <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                        <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project.</li>
+                        <li>Supervise the assessment of all graphic materials to ensure quality and accuracy of the design</li>
+                        <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                    </ul>
                 </div>
-            </div>
-            <div class="skill">
-                <span>Node.js</span>
-                <div class="bar-container">
-                    <div class="bar" style="width: 70%;"></div>
-                    <span class="percentage">70%</span>
-                </div>
-            </div>
-            <div class="skill">
-                <span>SQL</span>
-                <div class="bar-container">
-                    <div class="bar" style="width: 60%;"></div>
-                    <span class="percentage">60%</span>
+                <!-- Work Entry 2 -->
+                <div class="work-entry">
+                   
+                    <p class="date">2017 - 2018</p>
+                   
+                    <p class="position"><b>GRAPHIC DESIGN SPECIALIST</b></p>
+                    
+                    <ul>
+                        <li>Developed numerous marketing programs (logos, brochures, infographics, presentations, and advertisements).</li>
+                        <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                        <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                        <li>Created 4+ design presentations</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<section class="portfolio">
+    <h2>Portfolio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur odio culpa consectetur fugiat molestiae dolorem perspiciatis maiores repudiandae voluptatum molestias?</p>
+
+    <div class="cards">
+        <a href="#">ALL</a>
+        <a href="#">APP</a>
+        <a href="#">CARD</a>
+        <a href="#">WEB</a>
+    </div>
+
+    <div class="blocks">
+        <img src="images/portfolio/portfolio-1.jpg" alt="">
+        <img src="images/portfolio/portfolio-2.jpg" alt="">
+        <img src="images/portfolio/portfolio-3.jpg" alt="">
+        <img src="images/portfolio/portfolio-4.jpg" alt="">
+        <img src="images/portfolio/portfolio-5.jpg" alt="">
+        <img src="images/portfolio/portfolio-6.jpg" alt="">
+    </div>
 </section>
-<!-- Resume Section -->
+
+<section class="services" id="ser">
+    <h2>Services</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis culpa qui quo quisquam. Beatae at quo nisi, tenetur nostrum autem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa debitis similique illum facilis esse perspiciatis ut maxime placeat cum nam.</p>
+    <div class="options">
+        <div>
+            <i class="fa-solid fa-briefcase"></i>
+            <div>
+                <div><span>Lorem Ipsum</span></div>
+                <div><p>Lorem ipsum dolor sit amet <br> Lorem ipsum dolor sit amet.</p></div>
+            </div>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-chart-simple"></i>
+            <div>
+                <div><span>Lorem Ipsum</span></div>
+                <div><p>Lorem ipsum dolor sit amet <br>Lorem ipsum dolor sit amet.</p></div>
+            </div>
+        </div>
+
+        <div>
+            <i class="fa fa-folder-open"></i>
+            <div>
+                <div><span>Lorem Ipsum</span></div>
+                <div><p>Lorem ipsum dolor sit amet <br>Lorem ipsum dolor sit amet.</p></div>
+            </div>
+        </div>
+
+        <div>
+            <i class="fa fa-book"></i>
+            <div>
+                <div><span>Lorem Ipsum</span></div>
+                <div><p>Lorem ipsum dolor sit amet
+                    <br> Lorem ipsum dolor sit amet.</p></div>
+            </div>
+        </div>
+        <div>
+            <i class="fa fa-book"></i>
+            <div>
+                <div><span>Lorem Ipsum</span></div>
+                <div><p>Lorem ipsum dolor sit amet<br> Lorem ipsum dolor sit amet.</p></div>
+            </div>
+        </div>
+        <div>
+            <i class="fa fa-book"></i>
+            <div>
+                <div><span>Lorem Ipsum</span></div>
+                <div><p>Lorem ipsum dolor sit amet<br> Lorem ipsum dolor sit amet.</p></div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 
-<!-- Resume Section -->
-<!-- Resume Section -->
-<!-- <section class="resume">
-    <h2>HARRY</h2>
+<section class="portfolio" id="portfolio">
+    <h2>Testimonials</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur odio culpa consectetur fugiat molestiae dolorem perspiciatis maiores repudiandae voluptatum molestias?</p>
 
+    <div class="container">
     
-          <!-- Resume Section -->
-<section class="resume">
-    <h2>HARRY</h2>
-
-    <!-- Left Timeline (Introduction & Education) -->
-    <div class="timeline left">
-        <div class="entry introduction-entry">
-            <div class="circle"></div>
-            <h3>Introduction</h3>
-            <p>
-                Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.
-            </p>
-            <address>
-                Portland par 127, Orlando, FL<br>
-                （123） 456-7891<br>
-                alice.barkley@example.com
-            </address>
-        </div>
-
-        <div class="entry education-entry">
-            <div class="circle"></div>
-            <h3>Education</h3>
-            <!-- Degree Entry 1 -->
-            <div class="degree-entry">
-                <p class="date">2015 - 2016</p>
-                <p class="school">MASTER OF FINE ARTS & GRAPHIC DESIGN</p>
-                <p>
-                    Rochester Institute of Technology, Rochester, NY<br>
-                    Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend
-                </p>
+        <div class="testimonial">
+            <p class="quote">"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."</p>
+            <img class="testi" src="images/testimonials/testimonials-1.jpg" alt="">
+            <div>
+            <h2 class="name">Matt Brandon</h2>
+            <p class="role">Freelancer</p>
             </div>
-            <!-- Degree Entry 2 -->
-            <div class="degree-entry">
-                <p class="date">2010 - 2014</p>
-                <p class="school">BACHELOR OF FINE ARTS & GRAPHIC DESIGN</p>
-                <p>
-                    Rochester Institute of Technology, Rochester, NY<br>
-                    Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Elus vel ratione cius unde vitas rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon codor mart dil
-                </p>
+        </div>
+        <div class="testimonial">
+            <p class="quote">"Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid."</p>
+            <img class="testi" src="images/testimonials/testimonials-2.jpg" alt="">
+            <div>
+            <h2 class="name">John Larson</h2>
+            <p class="role">Entrepreneur</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <p class="quote">"Proin iaculis purus consequat sem cure dignissim donec porttitora entum suscipit rhoncus. Accusantium quam , ultricies eget id , aliquam eget nibh et . Maecen aliquam , risus at semper."</p>
+            <img class="testi" src="images/testimonials/testimonials-3.jpg" alt="">
+            <div>
+            <h2 class="name">Mike Ross</h2>
+            <p class="role">Investor</p>
             </div>
         </div>
     </div>
-
-    <!-- Right Timeline (Professional Experience) -->
-    <div class="timeline right">
-        <div class="entry experience-entry">
-            <div class="circle"></div>
-            <h3>Professional Experience</h3>
-            <!-- Work Entry 1 -->
-            <div class="work-entry">
-                <p class="date">2019 - Present</p>
-                <p class="position">SENIOR GRAPHIC DESIGN SPECIALIST</p>
-                <p class="company">Experion, New York, NY</p>
-                <ul>
-                    <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                    <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project.</li>
-                    <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                    <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-                </ul>
-            </div>
-            <!-- Work Entry 2 -->
-            <div class="work-entry">
-                <p class="date">2017 - 2018</p>
-                <p class="position">GRAPHIC DESIGN SPECIALIST</p>
-                <p class="company">Stepping Stone Advertising, New York, NY</p>
-                <ul>
-                    <li>Developed numerous marketing programs (logos, brochures, infographics, presentations, and advertisements).</li>
-                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                    <li>Created 4+ design presentations</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    
 </section>
 
+<section class="contact_page" id="contact">
+    <div class="contact">
+        <h1>Contact</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore aperiam officiis cupiditate inventore necessitatibus tempore, voluptatem architecto dolores praesentium velit accusantium consequuntur tempora dignissimos doloremque nisi nihil excepturi exercitationem mollitia quos quod fuga.</p>
 
+        <div class="contact-body">
+            <div class="contact-info">
+                <div class="location ct">
+                    <div class="ct-img">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="ct-text">
+                        <h2>Location:</h2>
+                        <h4>address</h4>
+                    </div>
+                </div>
+                <div class="email ct">
+                    <div class="ct-img">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="ct-text">
+                        <h2>Email:</h2>
+                        <h4>email.com</h4>
+                    </div>
+                </div>
+                <div class="phone ct">
+                    <div class="ct-img">
+                        <i class="fa fa-mobile"></i>
+                    </div>
+                    <div class="ct-text">
+                        <h2>phone</h2>
+                        <h4>1234567890</h4>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15559.81249065567!2d77.6650548!3d12.8463043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae135aeb7f340f%3A0x11406271cbac49c8!2sInfosys%20Limited!5e0!3m2!1sen!2sin!4v1701496537830!5m2!1sen!2sin" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+                <div class="contact-form">
+                    <form action="#" method="post" style="width: 100%;">
+                        <div class="name-email">
+                            
+                            <div class="name">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required style="width: 100%;">
+                            </div>
+                            <div class="email">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                        </div>
+                
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+      
 
 
 
@@ -339,6 +530,13 @@
                 document.addEventListener('DOMContentLoaded', function () {
                     typeDescription(); // Start the typing animation on page load for the description
                 });
-            </script>
+                function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+        </script>
 </body>
 </html>
